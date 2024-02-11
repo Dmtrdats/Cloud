@@ -9,11 +9,11 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
   const isAuth = useSelector(state => state.user.isAuth)
-  //const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-  /*useEffect(() => {
+  useEffect(() => {
     dispatch(auth())
-  }, [])*/
+  }, [])
   return (
     <BrowserRouter>
     <div className='App'>
