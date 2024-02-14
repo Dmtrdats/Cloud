@@ -6,6 +6,7 @@ import Registration from './components/Registration.jsx';
 import Login from './components/Login.jsx';
 
 import { useDispatch, useSelector } from 'react-redux';
+import { auth } from './actions/user.js';
 
 function App() {
   const isAuth = useSelector(state => state.user.isAuth)
