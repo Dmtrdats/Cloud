@@ -5,7 +5,7 @@ const authRouter = require("./routes/auth.routes")
 const fileRouter = require("./routes/file.routes")
 const app = express();
 const PORT = config.get('serverPort')
-const cors = require('./middleware/cors')
+const cors = require('./middleware/cors.middleware')
 
 app.use (cors)
 app.use (express.json())

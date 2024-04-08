@@ -12,8 +12,6 @@ const Registration = () => {
             <div className="authorisation__header">Регистрация</div>
             <Input value={email} setValue={setEmail} type="text" placeholder="Enter email"/>
             <Input value={password} setValue={setPassword} type="password" placeholder="Enter password"/>
-            <Input type="password" placeholder="Confirm password"/>
-
             <button onClick={() => registration(email, password)} className="authorisation__btn">Регистрация</button>
         </div>
     );
